@@ -9,5 +9,6 @@ export class StringCalculator{
 
     public add (){
         if (this.input === '') return 0
+        return parseInt(this.input)
     }
 }
