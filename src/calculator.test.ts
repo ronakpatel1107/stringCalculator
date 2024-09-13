@@ -6,5 +6,8 @@ describe('StringCalculator',()=>{
         expect(new StringCalculator('').add()).toBe(0); 
       });
 
+    test('should return 1', () => {
+        expect(new StringCalculator('1').add()).toBe(1); 
+      });
 
 })
