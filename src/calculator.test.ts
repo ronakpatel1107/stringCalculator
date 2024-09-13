@@ -18,7 +18,11 @@ describe('StringCalculator',()=>{
       expect(new StringCalculator('1,2,6').add()).toBe(9); 
      });
 
-     test('should return sum of any number', () => {
+    test('should return sum of any number', () => {
       expect(new StringCalculator('1,2,1,2,1').add()).toBe(7); 
+     });
+
+     test('should handle newlines between numbers', () => {
+      expect(new StringCalculator('1\n2,6').add()).toBe(9); 
      });
 })
