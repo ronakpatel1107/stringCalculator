@@ -37,4 +37,8 @@ describe('StringCalculator',()=>{
     test('should handle custom delimiters with any numbers', () => {
       expect(new StringCalculator('//;\n1;2;7').add()).toBe(10);
     });
+
+    test('should throw an error for negative numbers', () => {
+      expect(()=>{new StringCalculator('1,-2').add()}).toThrow('Negative numbers not allowed:-2');
+    });
 })
