@@ -33,4 +33,8 @@ describe('StringCalculator',()=>{
      test('should handle custom delimiters', () => {
       expect(new StringCalculator('//;\n1;2').add()).toBe(3);
     });
+
+    test('should handle custom delimiters with any numbers', () => {
+      expect(new StringCalculator('//;\n1;2;7').add()).toBe(10);
+    });
 })
