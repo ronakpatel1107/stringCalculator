@@ -2,7 +2,9 @@ import { StringCalculator } from './StringCalculator'
 
 describe('StringCalculator',()=>{
     
-    test('input not defined', () => {
-        expect(new StringCalculator().add()).toBe(0); 
+    test('should return undefined', () => {
+        expect(new StringCalculator('').add()).toBe(0); 
       });
+
+
 })

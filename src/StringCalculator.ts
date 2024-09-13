@@ -1,11 +1,13 @@
 
 
 export class StringCalculator{
-    constructor(){
+    public input: string;
 
+    constructor(input:string){
+        this.input = input;
     }
 
     public add (){
-        
+
     }
 }
