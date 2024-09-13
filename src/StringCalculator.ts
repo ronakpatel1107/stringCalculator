@@ -9,6 +9,7 @@ export class StringCalculator{
 
     public add (){
         if (this.input === '') return 0
-        return parseInt(this.input)
+        const numberArray = this.input.split(',');
+        return numberArray.reduce((sum, num) => sum + parseInt(num), 0);
     }
 }
