@@ -29,4 +29,8 @@ describe('StringCalculator',()=>{
      test('should handle newlines between numbers', () => {
       expect(new StringCalculator('1,2\n4,5').add()).toBe(12); 
      });
+
+     test('should handle custom delimiters', () => {
+      expect(new StringCalculator('//;\n1;2').add()).toBe(3);
+    });
 })
