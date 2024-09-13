@@ -1,7 +1,8 @@
 import { StringCalculator } from './StringCalculator'
 
 describe('StringCalculator',()=>{
-    test('Class not defined', () => {
+    
+    test('input not defined', () => {
         expect(new StringCalculator('').add()).toThrow('Error'); 
       });
 })
