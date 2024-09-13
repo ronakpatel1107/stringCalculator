@@ -12,5 +12,9 @@ describe('StringCalculator',()=>{
     
     test('should return sum of two number', () => {
         expect(new StringCalculator('1,2').add()).toBe(3); 
+    });
+
+    test('should return sum of three number', () => {
+      expect(new StringCalculator('1,2,6').add()).toBe(9); 
   });
 })
